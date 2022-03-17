@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "item": "minecraft:light_gray_wool"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "4": {
+      "item": "peluche_bouboule_mod:peluche_bouboule"
+    }
+  },
+  "result": {
+    "item": "peluche_bouboule_mod:peluche_bouboule_docteur",
+    "count": 1
+  }
+}

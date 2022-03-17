@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    " 3"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_wool"
+    },
+    "1": {
+      "item": "minecraft:red_wool"
+    },
+    "3": {
+      "item": "peluche_bouboule_mod:peluche_bouboule"
+    }
+  },
+  "result": {
+    "item": "peluche_bouboule_mod:peluche_bouboule_bonnet_de_noel",
+    "count": 1
+  }
+}

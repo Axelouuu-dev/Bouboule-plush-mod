@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:black_wool"
+    },
+    "1": {
+      "item": "peluche_bouboule_mod:peluche_bouboule"
+    },
+    "2": {
+      "item": "minecraft:black_wool"
+    }
+  },
+  "result": {
+    "item": "peluche_bouboule_mod:peluche_bouboule_lunettes",
+    "count": 1
+  }
+}

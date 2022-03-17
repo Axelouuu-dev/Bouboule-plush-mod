@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "peluche_bouboule_mod:peluche_bouboule"
+    },
+    "title": {
+      "translate": "advancements.peluche_originale.title"
+    },
+    "description": {
+      "translate": "advancements.peluche_originale.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "peluche_originale": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "peluche_bouboule_mod:peluche_bouboule"
+            ],
+            "count": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "peluche_bouboule_mod:demarrer_une_collection"
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "peluche_bouboule_mod:peluche_bouboule_luigi"
+    },
+    "title": {
+      "translate": "advancements.pelulche_luigi.title"
+    },
+    "description": {
+      "translate": "advancements.pelulche_luigi.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pelulche_luigi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "peluche_bouboule_mod:peluche_bouboule_luigi"
+            ],
+            "count": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "peluche_bouboule_mod:demarrer_une_collection"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "peluche_bouboule_mod:peluche_bouboule"
+    },
+    "title": {
+      "translate": "advancements.fais_moi_un_calin.title"
+    },
+    "description": {
+      "translate": "advancements.fais_moi_un_calin.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fais_moi_un_calin": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "peluche_bouboule_mod:peluche_originale"
+}

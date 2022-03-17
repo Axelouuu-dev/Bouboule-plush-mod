@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "peluche_bouboule_mod:peluche_bouboule_docteur"
+    },
+    "title": {
+      "translate": "advancements.peluche_docteur.title"
+    },
+    "description": {
+      "translate": "advancements.peluche_docteur.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "peluche_docteur": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "peluche_bouboule_mod:peluche_bouboule_docteur"
+            ],
+            "count": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "peluche_bouboule_mod:demarrer_une_collection"
+}

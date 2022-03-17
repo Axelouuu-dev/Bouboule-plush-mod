@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "peluche_bouboule_mod:peluche_bouboule_lunettes"
+    },
+    "title": {
+      "translate": "advancements.collection_terminee.title"
+    },
+    "description": {
+      "translate": "advancements.collection_terminee.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "collection_terminee": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "peluche_bouboule_mod:peluche_originale"
+}

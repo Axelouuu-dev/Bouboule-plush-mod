@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "peluche_bouboule_mod:items/pufferfish_plush"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "peluche_bouboule_mod:peluche_bouboule_bonnet_de_noel"
+    },
+    "title": {
+      "translate": "advancements.peluche_bonnet_de_noel.title"
+    },
+    "description": {
+      "translate": "advancements.peluche_bonnet_de_noel.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "peluche_bonnet_de_noel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "peluche_bouboule_mod:peluche_bouboule_bonnet_de_noel"
+            ],
+            "count": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "peluche_bouboule_mod:demarrer_une_collection"
+}

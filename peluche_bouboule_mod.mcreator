@@ -1,0 +1,388 @@
+{
+  "mod_elements": [
+    {
+      "name": "PelucheBouboule",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule"
+    },
+    {
+      "name": "Recipe",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe"
+    },
+    {
+      "name": "Reconfort",
+      "type": "potioneffect",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reconfort"
+    },
+    {
+      "name": "PelucheBoubouleRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FaisMoiUnCalin",
+      "type": "achievement",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fais_moi_un_calin"
+    },
+    {
+      "name": "PelucheBoubouleBonnetDeNoel",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_bonnet_de_noel"
+    },
+    {
+      "name": "PelucheBoubouleHautDeForme",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_haut_de_forme"
+    },
+    {
+      "name": "PelucheBoubouleDocteur",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_docteur"
+    },
+    {
+      "name": "PelucheBoubouleLuigi",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_luigi"
+    },
+    {
+      "name": "PelucheBouboulePirate",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_pirate"
+    },
+    {
+      "name": "PelucheBoubouleMario",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_mario"
+    },
+    {
+      "name": "PelucheBoubouleChapeauDePaille",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_chapeau_de_paille"
+    },
+    {
+      "name": "PelucheBoubouleLunettes",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bouboule_lunettes"
+    },
+    {
+      "name": "RecipeBonnetDeNoel",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_bonnet_de_noel"
+    },
+    {
+      "name": "RecipeHautDeForme",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_haut_de_forme"
+    },
+    {
+      "name": "RecipeDocteur",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_docteur"
+    },
+    {
+      "name": "RecipeLuigi",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_luigi"
+    },
+    {
+      "name": "RecipePirate",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_pirate"
+    },
+    {
+      "name": "RecipeMario",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_mario"
+    },
+    {
+      "name": "RecipeChapeauDePaille",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_chapeau_de_paille"
+    },
+    {
+      "name": "RecipeLunettes",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_lunettes"
+    },
+    {
+      "name": "PeluchePirateEnPoche",
+      "type": "achievement",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_pirate_en_poche"
+    },
+    {
+      "name": "DemarrerUneCollection",
+      "type": "achievement",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demarrer_une_collection"
+    },
+    {
+      "name": "PelulcheLuigi",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pelulche_luigi"
+    },
+    {
+      "name": "PelucheMario",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_mario"
+    },
+    {
+      "name": "PelucheDocteur",
+      "type": "achievement",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_docteur"
+    },
+    {
+      "name": "PelucheHautDeForme",
+      "type": "achievement",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_haut_de_forme"
+    },
+    {
+      "name": "PelucheChapeauDePaille",
+      "type": "achievement",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_chapeau_de_paille"
+    },
+    {
+      "name": "PelucheLunettes",
+      "type": "achievement",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_lunettes"
+    },
+    {
+      "name": "CollectionTerminee",
+      "type": "achievement",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "collection_terminee"
+    },
+    {
+      "name": "ProcedureCollectionTerminee",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "procedure_collection_terminee",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PelucheBonnetDeNoel",
+      "type": "achievement",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_bonnet_de_noel"
+    },
+    {
+      "name": "PelucheOriginale",
+      "type": "achievement",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "peluche_originale"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.peluche_bouboule_mod.peluche_bouboule_docteur": "§6Bouboule Plush",
+      "advancements.peluche_haut_de_forme.title": "Top hat plush",
+      "advancements.pelulche_luigi.descr": "Always there to fix the pipes",
+      "advancements.demarrer_une_collection.title": "Start a collection",
+      "effect.reconfort": "Comfort",
+      "item.peluche_bouboule_mod.peluche_bouboule_mario": "§6Bouboule Plush",
+      "advancements.peluche_bonnet_de_noel.descr": "Always there if you\u0027re cold",
+      "advancements.peluche_docteur.title": "Doctor plush",
+      "advancements.collection_terminee.descr": "Obtained all Bouboule plushes",
+      "item.peluche_bouboule_mod.peluche_bouboule_haut_de_forme": "§6Bouboule Plush",
+      "item.peluche_bouboule_mod.peluche_bouboule_lunettes": "§6Bouboule Plush",
+      "advancements.peluche_originale.descr": "Always there for you",
+      "advancements.collection_terminee.title": "Collection complete!",
+      "advancements.peluche_originale.title": "Original plush",
+      "item.peluche_bouboule_mod.peluche_bouboule_luigi": "§6Bouboule Plush",
+      "advancements.peluche_docteur.descr": "Always there in case of headache",
+      "advancements.peluche_chapeau_de_paille.descr": "Always there to become king of the pirates",
+      "item.peluche_bouboule_mod.peluche_bouboule_pirate": "§6Bouboule Plush",
+      "advancements.peluche_bonnet_de_noel.title": "Santa hat plush",
+      "advancements.peluche_lunettes.title": "Sunglasses plush",
+      "advancements.demarrer_une_collection.descr": "There are 8 other plushies to collect",
+      "advancements.peluche_lunettes.descr": "Always there to be classy",
+      "advancements.peluche_chapeau_de_paille.title": "Straw hat plush",
+      "item.peluche_bouboule_mod.peluche_bouboule": "§6Bouboule Plush",
+      "item.peluche_bouboule_mod.peluche_bouboule_bonnet_de_noel": "§6Bouboule Plush",
+      "advancements.fais_moi_un_calin.descr": "Hug Bouboule",
+      "advancements.peluche_haut_de_forme.descr": "Always there like a gentleman",
+      "item.peluche_bouboule_mod.peluche_bouboule_chapeau_de_paille": "§6Bouboule Plush",
+      "advancements.pelulche_luigi.title": "Green plumber plush",
+      "advancements.peluche_pirate_en_poche.title": "Pirate plush",
+      "advancements.fais_moi_un_calin.title": "Give me a hug!",
+      "advancements.peluche_mario.descr": "Always there to fix the pipes",
+      "advancements.peluche_pirate_en_poche.descr": "Always there to help with boarding",
+      "effect.peluche_bouboule_mod.reconfort": "Comfort",
+      "advancements.peluche_mario.title": "Red plumber plush"
+    },
+    "fr_fr": {
+      "item.peluche_bouboule_mod.peluche_bouboule_docteur": "§6Peluche Bouboule",
+      "advancements.peluche_haut_de_forme.title": "Peluche haut de forme",
+      "advancements.pelulche_luigi.descr": "Toujours là pour réparer les tuyaux",
+      "advancements.demarrer_une_collection.title": "Demarrer une collection",
+      "effect.reconfort": "Réconfort",
+      "item.peluche_bouboule_mod.peluche_bouboule_mario": "§6Peluche Bouboule",
+      "advancements.peluche_bonnet_de_noel.descr": "Toujours là si tu as froid",
+      "advancements.peluche_docteur.title": "Peluche docteur",
+      "advancements.collection_terminee.descr": "Vous avez obtenu toutes les peluches Bouboule",
+      "item.peluche_bouboule_mod.peluche_bouboule_haut_de_forme": "§6Peluche Bouboule",
+      "item.peluche_bouboule_mod.peluche_bouboule_lunettes": "§6Peluche Bouboule",
+      "advancements.peluche_originale.descr": "Toujours là pour toi",
+      "advancements.collection_terminee.title": "Collection terminée !",
+      "advancements.peluche_originale.title": "Peluche originale",
+      "item.peluche_bouboule_mod.peluche_bouboule_luigi": "§6Peluche Bouboule",
+      "advancements.peluche_docteur.descr": "Toujours là en cas de mal de crâne",
+      "advancements.peluche_chapeau_de_paille.descr": "Toujours là pour devenir le roi des pirates",
+      "item.peluche_bouboule_mod.peluche_bouboule_pirate": "§6Peluche Bouboule",
+      "advancements.peluche_bonnet_de_noel.title": "Peluche bonnet de Noël",
+      "advancements.peluche_lunettes.title": "Peluche lunettes de soleil",
+      "advancements.demarrer_une_collection.descr": "Il y a 9 peluches à collectionner",
+      "advancements.peluche_lunettes.descr": "Toujours là pour avoir la classe",
+      "advancements.peluche_chapeau_de_paille.title": "Peluche chapeau de paille",
+      "item.peluche_bouboule_mod.peluche_bouboule": "§6Peluche Bouboule",
+      "item.peluche_bouboule_mod.peluche_bouboule_bonnet_de_noel": "§6Peluche Bouboule",
+      "advancements.fais_moi_un_calin.descr": "Faire un câlin à Bouboule",
+      "advancements.peluche_haut_de_forme.descr": "Toujours là tel un gentleman",
+      "item.peluche_bouboule_mod.peluche_bouboule_chapeau_de_paille": "§6Peluche Bouboule",
+      "advancements.pelulche_luigi.title": "Peluche plombier vert",
+      "advancements.peluche_pirate_en_poche.title": "Peluche pirate",
+      "advancements.fais_moi_un_calin.title": "Fais-moi un câlin !",
+      "advancements.peluche_mario.descr": "Toujours là pour réparer les tuyaux",
+      "advancements.peluche_pirate_en_poche.descr": "Toujours là pour aider à l\u0027abordage",
+      "effect.peluche_bouboule_mod.reconfort": "Réconfort",
+      "advancements.peluche_mario.title": "Peluche plombier rouge"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "peluche_bouboule_mod",
+    "modName": "Peluche Bouboule Mod",
+    "version": "1.1.0",
+    "author": "BlackJamesYT, MCreator",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.peluchebouboulemod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200112711
+}

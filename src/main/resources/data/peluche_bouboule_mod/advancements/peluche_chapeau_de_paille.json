@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "peluche_bouboule_mod:peluche_bouboule_chapeau_de_paille"
+    },
+    "title": {
+      "translate": "advancements.peluche_chapeau_de_paille.title"
+    },
+    "description": {
+      "translate": "advancements.peluche_chapeau_de_paille.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "peluche_chapeau_de_paille": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "peluche_bouboule_mod:peluche_bouboule_chapeau_de_paille"
+            ],
+            "count": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "peluche_bouboule_mod:demarrer_une_collection"
+}
