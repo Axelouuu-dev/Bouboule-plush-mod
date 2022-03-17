@@ -30,9 +30,9 @@ public class PelucheBoubouleRightClickedOnBlockProcedure {
 					_player.getAdvancements().award(_adv, (String) _iterator.next());
 			}
 		}
-		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PelucheBoubouleModModMobEffects.RECONFORT.get()) : false)) {
+		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(PelucheBoubouleModModMobEffects.RECONFORT) : false)) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(PelucheBoubouleModModMobEffects.RECONFORT.get(), 1200, 0, (false), (true)));
+				_entity.addEffect(new MobEffectInstance(PelucheBoubouleModModMobEffects.RECONFORT, 1200, 0, (false), (true)));
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;

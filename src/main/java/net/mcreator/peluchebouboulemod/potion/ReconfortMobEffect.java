@@ -14,6 +14,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class ReconfortMobEffect extends MobEffect {
 	public ReconfortMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, 16724530);
+		setRegistryName("reconfort");
 	}
 
 	@Override

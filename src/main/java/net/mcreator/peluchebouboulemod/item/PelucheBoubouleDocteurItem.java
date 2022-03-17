@@ -17,6 +17,7 @@ import net.mcreator.peluchebouboulemod.procedures.PelucheBoubouleRightClickedOnB
 public class PelucheBoubouleDocteurItem extends Item {
 	public PelucheBoubouleDocteurItem() {
 		super(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(64).rarity(Rarity.COMMON));
+		setRegistryName("peluche_bouboule_docteur");
 	}
 
 	@Override
