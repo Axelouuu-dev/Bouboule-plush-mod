@@ -2,114 +2,139 @@ package net.mcreator.peluchebouboulemod.procedures;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.AdvancementEvent;
 
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
-import javax.annotation.Nullable;
+import net.mcreator.peluchebouboulemod.PelucheBoubouleModMod;
 
+import java.util.Map;
 import java.util.Iterator;
+import java.util.HashMap;
 
-@Mod.EventBusSubscriber
 public class ProcedureCollectionTermineeProcedure {
-	@SubscribeEvent
-	public static void onAdvancement(AdvancementEvent event) {
-		execute(event, event.getPlayer());
+	@Mod.EventBusSubscriber
+	private static class GlobalTrigger {
+		@SubscribeEvent
+		public static void onAdvancement(AdvancementEvent event) {
+			PlayerEntity entity = event.getPlayer();
+			double i = entity.getPosX();
+			double j = entity.getPosY();
+			double k = entity.getPosZ();
+			Advancement advancement = event.getAdvancement();
+			World world = entity.world;
+			Map<String, Object> dependencies = new HashMap<>();
+			dependencies.put("x", i);
+			dependencies.put("y", j);
+			dependencies.put("z", k);
+			dependencies.put("world", world);
+			dependencies.put("entity", entity);
+			dependencies.put("advancement", advancement);
+			dependencies.put("event", event);
+			executeProcedure(dependencies);
+		}
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
-	}
-
-	private static void execute(@Nullable Event event, Entity entity) {
-		if (entity == null)
+	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				PelucheBoubouleModMod.LOGGER.warn("Failed to load dependency entity for procedure ProcedureCollectionTerminee!");
 			return;
+		}
+		Entity entity = (Entity) dependencies.get("entity");
 		double TouteLesPeluches = 0;
 		TouteLesPeluches = 0;
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_pirate_en_poche")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_pirate_en_poche")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:pelulche_luigi")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:pelulche_luigi")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_mario")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_mario")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_docteur")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_docteur")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_haut_de_forme")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_haut_de_forme")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_chapeau_de_paille")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_chapeau_de_paille")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_lunettes")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_lunettes")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_bonnet_de_noel")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:peluche_bonnet_de_noel")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
-		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:demarrer_une_collection")))
+		if (((entity instanceof ServerPlayerEntity) && (entity.world instanceof ServerWorld))
+				? ((ServerPlayerEntity) entity).getAdvancements()
+						.getProgress(((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+								.getAdvancement(new ResourceLocation("peluche_bouboule_mod:demarrer_une_collection")))
 						.isDone()
 				: false) {
-			TouteLesPeluches = TouteLesPeluches + 1;
+			TouteLesPeluches = (TouteLesPeluches + 1);
 		}
 		if (TouteLesPeluches == 9) {
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("peluche_bouboule_mod:collection_terminee"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+			if (entity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+						.getAdvancement(new ResourceLocation("peluche_bouboule_mod:collection_terminee"));
+				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
 				if (!_ap.isDone()) {
-					Iterator _iterator = _ap.getRemainingCriteria().iterator();
-					while (_iterator.hasNext())
-						_player.getAdvancements().award(_adv, (String) _iterator.next());
+					Iterator _iterator = _ap.getRemaningCriteria().iterator();
+					while (_iterator.hasNext()) {
+						String _criterion = (String) _iterator.next();
+						((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+					}
 				}
 			}
 		}

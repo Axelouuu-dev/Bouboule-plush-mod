@@ -20,9 +20,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "peluche_bouboule_mod:peluche_bouboule_lunettes"
-            ],
+            "item": "peluche_bouboule_mod:peluche_bouboule_lunettes",
             "count": {
               "min": 0,
               "max": 1
